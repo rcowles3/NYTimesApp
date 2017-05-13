@@ -18,7 +18,8 @@
     <div class="search">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Search Parameters</h3>
+            <!-- <span class="glyphicon glyphicon-search" aria-hidden="true">Search Parameters</span> -->
+                <h3 class="glyphicon glyphicon-search panel-title">Search Parameters</h3>
             </div>
             <div class="panel-body">
                 <!-- Will need to create form -->
@@ -28,18 +29,23 @@
                         <input type="text" class="form-control" id="searchedArticles" placeholder="Ex: Venezuela Protest Again Turn Deadly">
                     </div>
                     <div class="dropdown">
-                    <label>Number of Records to Display: </label>
-                    	<div>
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">1
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">10</a></li>
-                            <li><a href="#">20</a></li>                          
-                        </ul>
+                        <label>Number of Records to Display: </label>
+                        <div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">1
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">20</a></li>
+                            </ul>
                         </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="searchTerm">Search Year (Optional):</label>
+                        <input type="text" class="form-control" id="searchYear" placeholder="Ex: 2001">
                     </div>
             </div>
         </div>
@@ -47,7 +53,7 @@
     <div class="results">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Search Results</h3>
+                <h3 class="panel-title glyphicon glyphicon-tasks" aria-hidden="true">Search Results</h3>
             </div>
             <div class="panel-body">
                 <!-- Display search results -->
