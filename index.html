@@ -67,7 +67,41 @@
         <!-- </div> -->
     </footer>
     <!-- Javascript to run after html is loaded -->
-    <script type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript">
+
+
+
+
+  $("#nytButton").on("click", function() {
+
+
+var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+url += '?q=Trump&' + $.param({
+  'api-key': "4405c13943a845a4a0592e23427ea136"
+});
+
+// var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+// url += '?q=Trump&' + $.param({
+//   'api-key': "4405c13943a845a4a0592e23427ea136"
+// });
+      
+
+      
+
+$.ajax({
+  url: url,
+  method: 'GET',
+}).done(function(result) {
+  console.log(result);
+}).fail(function(err) {
+  throw err;
+});
+});
+
+
+    
+  </script>
 </body>
 
 </html>
